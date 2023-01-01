@@ -84,7 +84,7 @@ const Portfolio=()=>{
                       </div>
                    </a>
                    <a href="https://kamalchakma1.github.io/me/" target="_blank"><img src={eLink} id={style.eLink2}/></a>&nbsp;&nbsp;&nbsp;
-                   <a href="https://github.com/kamalchakma1/kamalchakma" target="_blank"><img src={github} id={style.github1}/></a>
+                   <a href="https://github.com/kamalchakma1/me" target="_blank"><img src={github} id={style.github1}/></a>
                 </div>
             </div>
 
