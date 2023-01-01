@@ -50,12 +50,6 @@ const Portfolio=()=>{
                 <p>Hello, My name is Kamal Kanti Chakma and I  am very interested in web development frontend as well as backend.Currently i'm learning backend technologies and actively looking for an opportunity to help an organization to reach its goal by using my skills.</p>
                 <h5>Here are some technologies that i know : </h5><br></br><br></br>
                 <div id={style.skillSet}>
-                {/* <box-icon name='react' type='logo' animation='spin' color='#00fff3' size='lg'></box-icon>&nbsp;&nbsp;&nbsp;&nbsp;
-                <box-icon name='javascript' type='logo' animation='tada' color='#f76b05' size='lg'></box-icon>&nbsp;&nbsp;&nbsp;&nbsp;
-                <box-icon name='html5' type='logo' animation='tada' color='#f76b05' size='lg'></box-icon>&nbsp;&nbsp;&nbsp;&nbsp;
-                <box-icon name='css3' type='logo' animation='tada' color='#0532f7' size='lg'></box-icon>&nbsp;&nbsp;&nbsp;&nbsp;
-                <box-icon name='java' type='logo' animation='flashing' color='#ff9100'
-                 size='lg' ></box-icon> */}
                  <img src={react} alt="react"/>&nbsp;&nbsp;&nbsp;
                  <img src={js} alt="javascript"/>&nbsp;&nbsp;&nbsp;
                  <img src={html} alt="html"/>&nbsp;&nbsp;&nbsp;
