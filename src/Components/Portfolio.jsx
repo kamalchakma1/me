@@ -28,7 +28,7 @@ const Portfolio=()=>{
                         <ul id={style.subMenu}>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Projects</a></li>
-                            <li><a href="https://drive.google.com/file/d/1CMvWre2I_CNi-S2XvHizMUSWmObXzgYS/view?usp=sharing" download id={style.resumeButton} target="_blank">Resume</a></li>
+                            <li><a href="https://drive.google.com/file/d/1H7ljsTHyUOtja4UU5sAYjrHKOOiXg-qe/view?usp=sharing" download id={style.resumeButton} target="_blank">Resume</a></li>
                         </ul>    
                 </div>
             </section>
@@ -89,7 +89,7 @@ const Portfolio=()=>{
                         <img src={kamalPortfolio} alt="kamal portfolio"/>
                       </div>
                    </a>
-                   <a href="https://kamalchakma1.github.io/kamalchakma/" target="_blank"><img src={eLink} id={style.eLink2}/></a>&nbsp;&nbsp;&nbsp;
+                   <a href="https://kamalchakma1.github.io/me/" target="_blank"><img src={eLink} id={style.eLink2}/></a>&nbsp;&nbsp;&nbsp;
                    <a href="https://github.com/kamalchakma1/kamalchakma" target="_blank"><img src={github} id={style.github1}/></a>
                 </div>
             </div>
