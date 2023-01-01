@@ -28,7 +28,7 @@ const Portfolio=()=>{
                         <ul id={style.subMenu}>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Projects</a></li>
-                            <li><a href="https://drive.google.com/file/d/1CMvWre2I_CNi-S2XvHizMUSWmObXzgYS/view?usp=sharing" download id={style.resumeButton}>Resume</a></li>
+                            <li><a href="https://drive.google.com/file/d/1CMvWre2I_CNi-S2XvHizMUSWmObXzgYS/view?usp=sharing" download id={style.resumeButton} target="_blank">Resume</a></li>
                         </ul>    
                 </div>
             </section>
@@ -74,23 +74,23 @@ const Portfolio=()=>{
                    {/* === PROJECT 1 === */}
                <div id={style.projectContainer}>
                    <h3 id={style.projectOneTitle}>Dhamma Metta Welfare Society</h3>
-                   <a href="http://dmwsociety.org/" >
+                   <a href="http://dmwsociety.org/" target="_blank" >
                      <div className={style.projectBox} >
                        <img src={dmws} alt="dhamma metta welfare society"/>                    
                      </div>
                    </a>
-                   <a href="http://dmwsociety.org/" id={style.eLink1}><img src={eLink}/></a>
+                   <a href="http://dmwsociety.org/" id={style.eLink1}><img src={eLink} target="_blank"/></a>
                 
                    {/* === PROJECT 2 === */}
                 
                    <h3 id={style.projectTwoTitle}>Personal Portfolio</h3>
-                   <a href="https://kamalchakma1.github.io/kamalchakma/">
+                   <a href="https://kamalchakma1.github.io/kamalchakma/" target="_blank">
                       <div className={style.projectBox}>
                         <img src={kamalPortfolio} alt="kamal portfolio"/>
                       </div>
                    </a>
-                   <a href="https://kamalchakma1.github.io/kamalchakma/"><img src={eLink} id={style.eLink2}/></a>&nbsp;&nbsp;&nbsp;
-                   <a href="https://github.com/kamalchakma1/kamalchakma"><img src={github} id={style.github1}/></a>
+                   <a href="https://kamalchakma1.github.io/kamalchakma/" target="_blank"><img src={eLink} id={style.eLink2}/></a>&nbsp;&nbsp;&nbsp;
+                   <a href="https://github.com/kamalchakma1/kamalchakma" target="_blank"><img src={github} id={style.github1}/></a>
                 </div>
             </div>
 
@@ -101,9 +101,9 @@ const Portfolio=()=>{
             </div>
                {/* ===FOOTER=== */}
              <div id={style.footer}>
-                 <a href="https://in.linkedin.com/in/kamalkantichakma"><i class="fa-brands fa-linkedin fa-lg" ></i> </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                 <a href="https://github.com/kamalchakma1"><i class="fa-brands fa-github fa-lg" ></i> </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                 <a href="https://t.me/kamalchakma"><i class="fa-brands fa-telegram fa-lg" ></i> </a>
+                 <a href="https://in.linkedin.com/in/kamalkantichakma" target="_blank"><i class="fa-brands fa-linkedin fa-lg" ></i> </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                 <a href="https://github.com/kamalchakma1" target="_blank"><i class="fa-brands fa-github fa-lg" ></i> </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                 <a href="https://t.me/kamalchakma" target="_blank"><i class="fa-brands fa-telegram fa-lg" ></i> </a>
                  <p>Builed By Kamal</p>
             </div>
         </div>
