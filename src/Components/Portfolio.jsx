@@ -84,13 +84,13 @@ const Portfolio=()=>{
                    {/* === PROJECT 2 === */}
                 
                    <h3 id={style.projectTwoTitle}>Personal Portfolio</h3>
-                   <a href="#">
+                   <a href="https://kamalchakma1.github.io/kamalchakma/">
                       <div className={style.projectBox}>
                         <img src={kamalPortfolio} alt="kamal portfolio"/>
                       </div>
                    </a>
-                   <a href="#"><img src={eLink} id={style.eLink2}/></a>&nbsp;&nbsp;&nbsp;
-                   <a href="#"><img src={github} id={style.github1}/></a>
+                   <a href="https://kamalchakma1.github.io/kamalchakma/"><img src={eLink} id={style.eLink2}/></a>&nbsp;&nbsp;&nbsp;
+                   <a href="https://github.com/kamalchakma1/kamalchakma"><img src={github} id={style.github1}/></a>
                 </div>
             </div>
 
