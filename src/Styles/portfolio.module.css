@@ -1,0 +1,508 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* === COMMON PROPERTIES === */
+body{
+    background-color: #0A192F;
+    color: #fff;
+}
+#firstBlock>p{
+    word-spacing: 5px;
+}
+#getInTouch>a{
+    text-decoration: none;
+}
+#getInTouch>a>h3{
+    border: 1px solid #64FFDA;
+    padding: 7px 0px 7px 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 110px;
+}
+ /* === COLORS === */
+#firstBlock>p,#nav>#logo>h3,#firstBlock>a>button,#nav>#logo>h3{
+    color: #64FFDA;
+ }
+
+#getInTouch>h2,h3,#firstBlock>h2,#about>h2,#about>h5,#project>h2,#footer>a,#footer>p,#nav>#menus>#subMenu>li>a{
+    color: #CCD6F6;
+}
+
+/* === FOOTER === */
+#footer{
+    height: 70px;
+    width: 100%;
+}
+#footer>a{
+    text-decoration: none;
+}
+/* === MOBILE VIEW === */
+@media screen and (max-width: 600px)
+{
+   
+    /* === NAV BAR === */
+#nav{
+     display: flex;
+     height: 80px;
+     width: 100%;
+}
+    /* === LOGO === */
+#nav>#logo{
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     height: inherit;
+     width: 30%;
+}
+    /* === LOGO(NAME) === */
+#nav>#logo>h3{
+     border: 1px solid #64FFDA;
+     border-radius: 2px;
+     font-size: 20px;
+     font-weight: 400;
+     padding: 5px 12px;
+}
+    /*  === MENUS === */
+#nav>#menus{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    width: 70%;
+}
+    /*  === HAMBURGER === */
+#nav>#menus>div{
+    border: none;
+    background-color: #64FFDA;
+    height: 3px;
+    margin-right: 10px;
+    margin-top: 7px;
+    transition: transform 0.2s;
+    width: 40px;
+}
+     /*  === LINE 2 === */
+#nav>#menus>#line2{
+    transition: opacity 0.2s;
+    width: 32px;
+}
+     /*  === LINE 3 === */
+#nav>#menus>#line3{
+    width: 22px;
+}
+    /* === INPUT BOX === */
+#nav>#menus>input{
+    height: 100px;
+    opacity: 0;
+    position: absolute;
+    right: 15px;
+    width: 70px;
+    z-index: 100;
+}
+     /* === ON CHECKED LINES TRANSFORM === */
+#nav>#menus>input:checked ~#line1{
+    transform-origin: 10px 10px;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+#nav>#menus>input:checked ~#line2{
+    opacity: 0;
+    
+}
+#nav>#menus>input:checked ~#line3{
+    transform-origin: 10px -10px;
+    width: 40px;
+    transform: rotate(-45deg);
+    z-index: 2;
+}
+     /*  === SUB MENU DIV === */
+#nav>#menus>#subMenu{
+    background-color: #112240;
+    display: none;
+    height: 700px;
+    position: absolute;
+    top: 1px;
+    text-align: center;
+    transform: translateX(100px); 
+    transition: transform 0.2s;
+    right: -20px;
+    width: 290px;
+    z-index: 1;
+}
+#nav>#menus>#subMenu>li{
+    list-style-type: none;
+    margin-top: 130px;    
+}
+#nav>#menus>#subMenu>li>a{
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+}
+#nav>#menus>#subMenu>li>#resumeButton{
+    border: 1px solid #64FFDA;
+    border-radius: 3px;
+    padding: 8px 12px;
+}
+#nav>#menus>#subMenu>p{
+    position: absolute;
+    z-index: 1;
+}    
+#nav>#menus>input:checked ~#subMenu{
+    display: block;
+    transform: none;    
+}
+
+    /* === FIRST BLOCK === */
+#firstBlock{
+    height: 180px;
+    margin-top: 50px;
+    padding-left: 50px;
+    width: 100%;
+}
+
+#firstBlock>h2{
+    font-size: 30px;
+    margin-top: 15px;
+}
+#firstBlock>a>button{
+    border: 1px solid #64FFDA;
+    border-radius: 3px;
+    background-color: inherit;
+    font-size: 17px;
+    margin-top: 40px;
+    height: 50px;
+    width: 100px;
+}
+/* === IMAGE === */
+#myPic{
+    border-radius: 5px;
+    height: 250px;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 250px;
+}
+#backgroundBorder{
+    border: 1px solid #64FFDA;
+    border-radius: 2px;
+    height: 250px;
+    margin-left: 80px;
+    margin-top: 38px;
+    width: 250px;
+}
+#skillSet>img{
+    width: 40px;
+}
+/* === ABOUT === */
+#about{
+    height: 200px;
+    line-height: 25px;
+    margin-top: 80px;
+    padding: 0 40px 0 50px;
+    width: 100%;
+}
+#about>p{
+    color: #8892B0;
+}
+#about>h5{
+    margin-top: 10px;
+}
+#about>#react{
+    font-size: 40px;
+}
+/* === SCRIBBLE === */
+#scribble{
+    position: absolute;
+    height: 190px;
+    width: 100px;
+    transform: rotate(45deg) translateX(-50px);
+    top: 570px;
+    right: 0;
+}
+
+/* === PROJECTS === */
+#project{
+    height: 600px;
+    margin-top: 230px;
+    padding-left: 50px;
+    width: 100%;
+}
+#projectContainer>a>img{
+    width: 20px;
+}
+/* === PROJECT 1 === */
+#project>#projectContainer>h3{
+    color: #8892B0;
+    margin-top: 20px;
+}
+.projectBox{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 2px;
+    height: 250px;
+    margin-top: 10px;
+    width: 300px;
+}
+.projectBox>img{
+    border: 1px solid #64FFDA;
+    border-radius:  3px;
+    height: 250px;
+    width: 300px;
+}
+
+/* === GET IN TOUCH === */
+#getInTouch{
+    height: 150px;
+    margin-top: 150px;
+    padding-left: 130px;
+    width: 100%;
+}
+
+/* === FOOTER === */
+#footer{
+    padding-left: 42%;
+}
+#footer>p{
+    margin-left: -10px;
+    margin-top: 10px;
+}
+}
+/* === MOBILE VIEW END === */
+
+
+/* === DESKTOP VIEW START === */
+
+@media screen and (min-width: 768px)
+{
+    
+#nav>#menus,#nav>#menus>input,#nav>#menus>div{
+    display: none;
+}
+   
+    /* === NAV BAR === */
+#nav{
+    
+    display: flex;
+    height: 80px;
+    margin-top: 10px;
+    width: 100%;
+}
+     /* === LOGO === */
+#nav>#logo{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    margin-left: 30px;
+    width: 10%;
+}
+    /* === LOGO(NAME) === */
+#nav>#logo>h3{
+    border: 1px solid #64FFDA;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px 12px;
+}
+/* === MENUS === */
+#nav>#menus{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    width: 90%;
+}
+ /*  === SUB MENU DIV === */
+ #nav>#menus>#subMenu{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: inherit;
+    width: 600px;
+ }
+ #nav>#menus>#subMenu>li{
+    list-style-type: none;
+ }
+ #nav>#menus>#subMenu>li>a{
+    font-size: 14px;
+    text-decoration: none;
+ }
+ #nav>#menus>#subMenu>li>a:hover{
+    color: #64FFDA;
+ }
+ #nav>#menus>#subMenu>li>#resumeButton{
+    border: 1px solid #64FFDA;
+    border-radius: 3px;
+    padding: 8px 12px;
+ }
+ /* === FIRST BLOCK === */
+#firstBlock{
+    height: 180px;
+    margin-top: 80px;
+    padding-left: 200px;
+    width: 100%;
+}
+#firstBlock>h2{
+    font-size: 50px;
+}
+#firstBlock>a>button{
+    border: 1px solid #64FFDA;
+    border-radius: 3px;
+    background-color: inherit;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 40px;
+    height: 50px;
+    width: 180px;
+}
+#firstBlock>a>button:hover{
+    background-color: #a1e7d769;
+}
+/* === IMAGE === */
+#myPic{
+    background-color: yellow;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 250px;
+    position: absolute;
+    top: 165px;
+    right: 240px;
+    width: 250px;
+    z-index: 1;
+}
+#myPic:hover{
+    height: 255px;
+    width: 255px;
+    transition: height width  0.6s;
+}
+#backgroundBorder{
+    border: 1px solid #64FFDA;
+    border-radius: 2px;
+    height: 250px;
+    margin-left: 72px;
+    margin-top: 32px;
+    position: absolute;
+    top: 150px;
+    right: 225px;
+    width: 250px;
+}
+/* === SCRIBBLE === */
+#scribble{
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    transform: rotate(45deg) translateX(-100px);
+    top: 450px;
+    right: 120px;
+}
+/* === ABOUT === */
+#about{
+    height: 250px;
+    line-height: 30px;
+    margin-top: 165px;
+    padding: 0 200px 0 195px;
+    width: 100%;
+}
+#about>p{
+    color: #8892B0;
+    font-size: 22px;
+}
+
+#about>h5{
+    margin-top: 30px;
+}
+/* === SKILL SET === */
+#skillSet{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 70px;
+    width: 650px;
+}
+/* === PROJECTS === */
+#project{   
+    height: 600px;
+    margin-top: 180px;
+    padding-left: 190px;
+    width: 100%;
+  }
+#projectContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+  /* ===PROJECT TITLE === */
+#projectContainer>h3{
+    position: absolute;
+    top: 1020px;
+}
+#projectContainer>#projectOneTitle{
+    left: 265px;
+}
+#projectContainer>#projectTwoTitle{
+    right: 500px;
+}
+.projectBox{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 2px;
+    height: 250px;
+    margin-top: 30px;
+    width: 350px;
+}
+.projectBox>img{
+    border: 1px solid #64FFDA;
+    border-radius:  3px;
+    height: inherit;
+    width: 350px;
+}
+.projectBox>img:hover{
+    height: 255px;
+    width: 355px;
+}
+#project>#projectContainer>a>img{
+    width: 30px;
+}
+/* === External Links === */
+#projectContainer>#eLink1{
+    position: absolute;
+    top: 1310px;
+    left: 260px;
+}
+#projectContainer>a>#eLink2{
+    position: absolute;
+    top: 1310px;
+    right: 633px;
+}
+#projectContainer>a>#github1{
+    position: absolute;
+    top: 1310px;
+    right: 550px;
+}
+/* === PROJECT 1 === */
+#project>#projectContainer>h3{
+    color: #8892B0;
+}
+/* === GET IN TOUCH === */
+#getInTouch{
+    height: 150px;
+    margin-top: 20px;
+    padding-left: 45%;
+    width: 100%;
+
+}
+/* === FOOTER === */
+#footer{
+    padding-left: 47%;
+}
+#footer>p{
+    margin-left: -8px;
+    margin-top: 15px;
+}
+}
