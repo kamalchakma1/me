@@ -10,7 +10,7 @@ import js from "../Images/js.png"
 import react from "../Images/react.png"
 import java from "../Images/java.png"
 import sql from "../Images/sql.png"
-import kamalPortfolio from "../Images/kamalPortfolio.PNG"
+import varal from "../Images/varal.PNG"
 const Portfolio=()=>{
     return(
         <div>
@@ -77,14 +77,14 @@ const Portfolio=()=>{
                 
                    {/* === PROJECT 2 === */}
                 
-                   <h3 id={style.projectTwoTitle}>Personal Portfolio</h3>
-                   <a href="https://kamalchakma1.github.io/kamalchakma/" target="_blank">
+                   <h3 id={style.projectTwoTitle}>Varal Clone</h3>
+                   <a href="https://kamalchakma1.github.io/varal/" target="_blank">
                       <div className={style.projectBox}>
-                        <img src={kamalPortfolio} alt="kamal portfolio"/>
+                        <img src={varal} alt="varal"/>
                       </div>
                    </a>
-                   <a href="https://kamalchakma1.github.io/me/" target="_blank"><img src={eLink} id={style.eLink2}/></a>&nbsp;&nbsp;&nbsp;
-                   <a href="https://github.com/kamalchakma1/me" target="_blank"><img src={github} id={style.github1}/></a>
+                   <a href="https://kamalchakma1.github.io/varal/" target="_blank"><img src={eLink} id={style.eLink2}/></a>&nbsp;&nbsp;&nbsp;
+                   <a href="https://github.com/kamalchakma1/varal" target="_blank"><img src={github} id={style.github1}/></a>
                 </div>
             </div>
 
