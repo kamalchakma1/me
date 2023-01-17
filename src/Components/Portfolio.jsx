@@ -28,7 +28,7 @@ const Portfolio=()=>{
                         <ul id={style.subMenu}>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Projects</a></li>
-                            <li><a href="https://drive.google.com/file/d/1H7ljsTHyUOtja4UU5sAYjrHKOOiXg-qe/view?usp=sharing" download id={style.resumeButton} target="_blank">Resume</a></li>
+                            <li><a href="https://drive.google.com/file/d/1C7q3F-vnEf5OANbGYdS5RfCiGyHAYdys/view?usp=sharing" download id={style.resumeButton} target="_blank">Resume</a></li>
                         </ul>    
                 </div>
             </section>
